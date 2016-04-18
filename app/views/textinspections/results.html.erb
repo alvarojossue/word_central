@@ -1,0 +1,12 @@
+<h1>Text inspection</h1>
+<h2>Your original text is:</h2>
+<h3><%= @text %></h3>
+<p>----------------------------</p>
+<p><strong>Word count:</strong> <%= @word_count %></p>
+<p><strong>Estimated reading time:</strong> <%= @reading_time %> minutes</p>
+<p><strong>Most commons words:</strong> 
+	<% @frequency.each do|item|%> 
+	<%="#{item[0]}" + "=" + "#{item[1]}" + " times..."%>
+	<%end%></p>
+<p>----------------------------</p>
+<%= link_to "Go back to the main page", "/" %>

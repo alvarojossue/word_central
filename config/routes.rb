@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   get '/text_inspections/new', to: 'textinspections#new'
 
+  post '/text_inspections', to: 'textinspections#create'
+
+  get '/asciis/new', to: 'asciis#new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
