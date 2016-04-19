@@ -1,0 +1,15 @@
+<h1>Word Central</h1>
+
+<h2>Submit text for asciisfication</h2>
+
+<form action="/asciis" method="post">
+  <div>
+    <label for="text_asciis_user_text">Text</label>
+  </div>
+  <div>
+    <textarea name="asciistext" id="text_asciis_user_text" rows="4" cols="50"></textarea>
+  </div>
+  <button type="submit">Submit text</button>
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>
